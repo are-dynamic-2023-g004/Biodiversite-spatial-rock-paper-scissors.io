@@ -20,3 +20,4 @@ SEMAINE DU 17 MARS 2023
 SEMAINE DU 24 MARS 2023
 
   Nous avons continué de travailler sur notre programme duquel nous sommes désormais plutôt satisfaits. De plus, nous avons aussi pu élargir notre répertoir de sources universitaires afin d'étoffer encore nos connaissances sur le sujet et aussi pour en dénicher des idées qui pourraient nous sembler intéressantes ou pertinentes dans le cadre de notre projet. 
+
