@@ -7,7 +7,7 @@
     
   Description du projet:
   
-   Nous tacherons de modéliser une dynamique de prédation en se basant sur le modèle de Lokta-Voltera et sur le principe du jeu pierre-feuille-ciseaux
+   Nous tacherons de modéliser une dynamique de prédation en se basant sur le principe du pierre-feuille-ciseaux spacial et les impacts que les différents paramètres du modèle peuvent avoir sur la biodiversité d'un milieu donné.
     
  SEMAINE DU 10 MARS 2023
  
@@ -19,8 +19,17 @@ SEMAINE DU 17 MARS 2023
 
 SEMAINE DU 24 MARS 2023
 
-  Nous avons continué de travailler sur notre programme duquel nous sommes désormais plutôt satisfaits. De plus, nous avons aussi pu élargir notre répertoir de sources universitaires afin d'étoffer encore nos connaissances sur le sujet et aussi pour en dénicher des idées qui pourraient nous sembler intéressantes ou pertinentes dans le cadre de notre projet. 
+  Nous avons continué de travailler sur notre programme duquel nous sommes désormais plutôt satisfaits. De plus, nous avons aussi pu élargir notre répertoir de sources universitaires afin d'étoffer encore nos connaissances sur le sujet et aussi pour en dénicher des idées qui pourraient nous sembler intéressantes ou« Mobility Promotes and Jeopardizes Biodiversity in Rock–Paper–
+Scissors Games » pertinentes dans le cadre de notre projet. 
 
 SEMAINE DU 31 MARS 2023
 
-  Durant cette séance, nous avons décidé d'approfondir nos connaissances relatives au sujet en lisant d'avantage d'article universitaire afin de mieux cerner les impacts qu'ont nos paramètre et de pouvoir les décrire de manière plus précise.
+  Durant cette séance, nous avons décidé d'approfondir nos connaissances relatives au sujet en lisant d'avantage d'article universitaire afin de mieux cerner les impacts qu'ont nos paramètre et de pouvoir les décrire de manière plus précise. Nous avons trouvé particulièrement utile les articles " Multi-Layered Model for Rock-Paper-Scissors Game: A Swarm Intelligence Sustains Biodiversity " et " Mobility Promotes and Jeopardizes Biodiversity in Rock–Paper–
+Scissors Games ". Nous avons aussi mis quelques idées en commun afin de pouvoir améliorer notre programme. Nous avons aussi entamé notre carnet de bord.
+
+SEMAINE DU 7 AVRIL 2023
+
+  Nous avons consacré cette séance à l'achévement de notre carnet de bord. 
+  
+SEMAINE DU 14 AVRIL
+ 
