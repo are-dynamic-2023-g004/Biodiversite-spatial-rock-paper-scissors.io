@@ -23,3 +23,4 @@ SEMAINE DU 24 MARS 2023
 
 SEMAINE DU 31 MARS 2023
 
+  Durant cette séance, nous avons décidé d'approfondir nos connaissances relatives au sujet en lisant d'avantage d'article universitaire afin de mieux cerner les impacts qu'ont nos paramètre et de pouvoir les décrire de manière plus précise.
