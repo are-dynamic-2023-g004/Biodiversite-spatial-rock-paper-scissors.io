@@ -13,4 +13,8 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 -C à son tour peut tuer A
 La reproduction des individus n’est autorisée que sur les sites adjacents vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
+*notre modèle en action
+
 # Enjeux
+
+Nous tacherons ici de montrer que la biodiversité est affectée de manière conséquente par la migration spatiale des individus (correèspondant au paramètre mobilité de notre modèle), une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité semble faire concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité. Pour les valeurs de mobilité faibles, le développement temporel est dominé par les interactions entre les individus voisins, ce qui entraîne le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, l’homogénéité spatiale et la biodiversité sont perdues. Par le biais de tests effectués sur ordinateur, nous avons pu relever deux valeur critique de la mobilité délimite nettement ces scénarios.
