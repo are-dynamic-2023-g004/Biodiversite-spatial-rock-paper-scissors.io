@@ -1,5 +1,7 @@
 #Introduction
 
+![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
+
 Dans le cadre de cette ARE DYNAMIC, nous fûmes ammenés à étudier les différents enjeux que pouvaient engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Cette dernière est régie par les interactions cycliques et non hiérarchiques entre les différentes populations concurrentes. Afin de mieux pouvoir observer les conséquences de ces intéractions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
 
 ![image](https://user-images.githubusercontent.com/125641635/233149337-59fe4ca0-3582-4dbc-b384-f12aff287494.png)
