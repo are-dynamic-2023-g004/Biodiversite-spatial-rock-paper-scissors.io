@@ -1,8 +1,16 @@
 # Introduction
 
+**Étude de l'impact de la mobilité spatiale sur la biodiversité d'un milieu**
+
+**Study regarding the impact of spatial mobility on an environement's biodiversity**
+
+Par/by Lucas le Roc'h Morgère, Ilias Ouriagli
+
 ![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
 
 Dans le cadre de cette ARE DYNAMIC, nous fûmes ammenés à étudier les différents enjeux que pouvaient engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Cette dernière est régie par les interactions cycliques et non hiérarchiques entre les différentes populations concurrentes. Afin de mieux pouvoir observer les conséquences de ces intéractions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
+
+### Présentation de notre modèle
 
 ![image](https://user-images.githubusercontent.com/125641635/233149337-59fe4ca0-3582-4dbc-b384-f12aff287494.png)
 
@@ -19,6 +27,6 @@ La reproduction des individus n’est autorisée que sur les sites adjacents vid
 
 *notre modèle en action*
 
-## Enjeux
+### Problématique
 
-Nous tacherons ici de montrer que la biodiversité est affectée de manière conséquente par la migration spatiale des individus (correèspondant au paramètre mobilité de notre modèle), une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité semble faire concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité. Pour les valeurs de mobilité faibles, le développement temporel est dominé par les interactions entre les individus voisins, ce qui entraîne le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, l’homogénéité spatiale et la biodiversité sont perdues. Par le biais de tests effectués sur ordinateur, nous avons pu relever deux valeurs critiques de la mobilité qui délimitent nettement ces scénarios.
+Nous tacherons ici d'étudier l'impact qu'a la migration spatiale des individus (correèspondant au paramètre mobilité de notre modèle) sur que la biodiversité car il s'agit d'une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité semblant faire concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité, notre hypothése est donc que pour les valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, l’homogénéité spatiale et la biodiversité sont perdues. Nous tacherons donc le biais de tests effectués sur ordinateur sur notre modèle, de valider cette hypothèse au long de notre travail
