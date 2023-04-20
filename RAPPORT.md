@@ -47,3 +47,7 @@ Nous pouvons constater sur cette courbe une relation décroissante entre le para
 
 Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dir, un seuil de mobilité au dessus duquel il y aura toujours dominance d'une espèce. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.18, notre modèle arrive toujours à un état où une seule espèce dommine.
 Cette courbe ci
+
+### Conclusion
+
+De fait des résultats des tests que nous avons effectué plus haut, il semblerait bien que la mobilité d'une espèce dans son environement ai des impacts conséquents pour la biodiversité de ce dernier.
