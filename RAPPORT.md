@@ -26,9 +26,13 @@ La reproduction des individus n’est autorisée que sur les sites adjacents vid
 A chaque tour de boucle, chaque indidivu est traité et peut effectuer une ou plusieurs des actions décrites plus haut.
 
 Cliquez sur les liens suivants pour voir trois vidéos de notre modèle en action. En fonction des paramètres le comportement de l'algorithme est différent.
+
 https://imgur.com/a/5CajVVb
+
 https://imgur.com/a/LIDKk96
+
 https://imgur.com/a/o27XBHy
+
 Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres. 
 
 
