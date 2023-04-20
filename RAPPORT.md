@@ -2,9 +2,7 @@
 
 **Étude de l'impact de la mobilité spatiale sur la biodiversité d'un milieu**
 
-**Study regarding the impact of spatial mobility on an environement's biodiversity**
-
-Par/by Lucas le Roc'h Morgère, Ilias Ouriagli
+Par Lucas le Roc'h Morgère, Ilias Ouriagli
 
 ![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
 
