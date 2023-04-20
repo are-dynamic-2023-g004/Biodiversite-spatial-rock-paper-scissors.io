@@ -62,7 +62,7 @@ De fait des résultats des tests que nous avons effectué plus haut, on voit bie
 
 ### Analyse critique et ouverture
 
-La limite de notre recherche est que notre modèle ne reste qu'une simplification de la réalité et ne prend pas en compte de nombreux autres paramètres qui influent sur la biodiversité dans un milieu.
+La limite de notre travail est que notre modèle ne reste qu'une simplification de la réalité et ne prend pas en compte de nombreux autres paramètres qui influent sur la biodiversité dans un milieu.
 
 On pourrait également vouloir, en restant avec notre modèle, s'intéresser aux paramètres prédation et reproduction plus en détail et étudier également l'impact de leur variation sur la convergence de l'algorithme vers une situation d'extinction de deux espèces.
 
