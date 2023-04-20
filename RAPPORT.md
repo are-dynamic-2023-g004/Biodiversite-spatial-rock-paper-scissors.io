@@ -25,8 +25,10 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 La reproduction des individus n’est autorisée que sur les sites adjacents vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
+Les actions décries ci-dessus sont vérifiées pour la globalité des individus composant notre matrice à chaque tour de boucle pour un nombre total défini par l'utilisateur. 
+
 *notre modèle en action*
 
 ### Problématique
 
-Nous tacherons ici d'étudier l'impact qu'a la migration spatiale des individus (correèspondant au paramètre mobilité de notre modèle) sur que la biodiversité car il s'agit d'une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité semblant faire concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité, notre hypothése est donc que pour les valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, l’homogénéité spatiale et la biodiversité sont perdues. Nous tacherons donc le biais de tests effectués sur ordinateur sur notre modèle, de valider cette hypothèse au long de notre travail
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (corrèspondant au paramètre mobilité de notre modèle) sur que la biodiversité car il s'agit d'une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité semblant faire concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité, notre hypothése est donc que pour les valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, l’homogénéité spatiale et la biodiversité sont perdues. Nous tacherons donc le biais de tests effectués sur ordinateur sur notre modèle, de valider cette hypothèse au long de notre travail
