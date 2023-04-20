@@ -6,7 +6,7 @@ Par Lucas le Roc'h Morgère, Ilias Ouriagli
 
 ![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
 
-Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les différents enjeux que peuvent engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Par exemple, les espèces en mangent d'autres et peuvent migrer d'un endroit à l'autre. Afin de mieux pouvoir observer les conséquences de ces interactions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
+Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les différents enjeux que peuvent engendrer les interactions entre différentes populations dans un écosystème donné ainsi que les impacts de ces interactions sur la biodiversité du dit écosystème. Par exemple, les espèces en mangent d'autres et peuvent migrer d'un endroit à l'autre. Afin de mieux pouvoir observer les conséquences de ces interactions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
 
 ### Présentation de notre modèle
 
@@ -21,7 +21,7 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 -C à son tour peut tuer A
 
-La reproduction des individus n’est autorisée que sur les sites adjacents vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
+La reproduction des individus n’est autorisée que sur les cases adjacentes vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
 A chaque tour de boucle, chaque indidivu est traité et peut effectuer une ou plusieurs des actions décrites plus haut.
 
@@ -38,17 +38,17 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, la biodiversité sera perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, la biodiversité sera perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
 ### Tests
 
-Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs test sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tour nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
+Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs test sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tours nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
 
 *nombre de tours moyen nécessaires à l'extinction d'une espèce selon le paramètre ε*
 
 <img width="219" alt="Courbe nb tours en fct de permutation" src="https://user-images.githubusercontent.com/125641635/233406310-ef4bc624-6507-4dbe-93fa-bcc9bef3f38b.PNG">
 
-Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et le nombre moyen de tours nécessaire à l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire pour arriver à un scénario dans lequel seule une espèce survit est faible.
+Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et le nombre moyen de tours nécessaire à l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyen de tours nécessaire pour arriver à un scénario dans lequel seule une espèce survit est élevé. A noter que dès lors qu'une espèce arrive à extinction, cela signifie forcément qu'une autre espèce va s'éteindre et qu'une seule survivra (en effet, de par la nature même de notre modèle, sur les deux espèces restantes l'une domine l'autre). 
 
 *proportion des itérations étant parvenues à l'extinction d'une espèce selon le paramètre ε*
 
