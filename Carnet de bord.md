@@ -7,7 +7,7 @@
     
   Description du projet:
   
-   Nous tacherons de modéliser les interactions entre les populations d'un milieu donné en se basant sur le principe du pierre-feuille-ciseaux spatial et les impacts que les différents paramètres du modèle peuvent avoir sur la biodiversité du milieu.
+   Notre objectif est de modéliser les interactions entre les populations d'un milieu donné en se basant sur le principe du pierre-feuille-ciseaux spatial et les impacts que les différents paramètres du modèle peuvent avoir sur la biodiversité du milieu.
     
  SEMAINE DU 10 MARS 2023
  
