@@ -38,7 +38,7 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, la biodiversité sera perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
 ### Tests
 
@@ -48,14 +48,21 @@ Afin de pouvoir répondre à la question énoncée précedemenent, nous avons d�
 
 <img width="219" alt="Courbe nb tours en fct de permutation" src="https://user-images.githubusercontent.com/125641635/233406310-ef4bc624-6507-4dbe-93fa-bcc9bef3f38b.PNG">
 
-Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et le nombre moyen de tours nécessaires à l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire pour arriver à un scénario dans lequel une espèce domine est faible.
+Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et le nombre moyen de tours nécessaire à l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire pour arriver à un scénario dans lequel seule une espèce survit est faible.
 
 *proportion des itérations étant parvenues à l'extinction d'une espèce selon le paramètre ε*
 
 <img width="202" alt="courbe2 ARE" src="https://user-images.githubusercontent.com/125641635/233484278-fa590816-74d1-4fa5-8b39-e7f6d71ec0ba.PNG">
 
-Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dire, un seuil de mobilité au dessus duquel il y aura toujours la dominance d'une espèce au bout d'un certain temps. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.18, notre modèle arrive toujours à un état où une seule espèce dommine.
+Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dire, un seuil de mobilité au dessus duquel il y aura toujours l'extinction de deux espèces au bout d'un certain temps. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.2, notre modèle arrive toujours à un état où une seule espèce survit.
 
-### Conclusion
+### Conclusions
 
-De fait des résultats des tests que nous avons effectué plus haut, il semblerait bien que la mobilité d'une espèce dans son environement ai des impacts conséquents pour la biodiversité de ce dernier.
+De fait des résultats des tests que nous avons effectué plus haut, on voit bien qu'une trop grande mobilité dans un milieu entraine de grands risques de perte de biodiversité, en venant perturber les intercations cycliques localement en place entre les espèces de l'écosystème. On peut penser aux espèces invasives qui mettent en danger les écosystèmes, comme les frelons asiatiques qui provoquent une baisse de la population d'abeilles et de frelons européens en France. 
+
+### Analyse critique et ouverture
+
+La limite de notre recherche est que notre modèle ne reste qu'une simplification de la réalité et ne prend pas en compte de nombreux autres paramètres qui influent sur la biodiversité dans un milieu.
+
+On pourrait également vouloir, en restant avec notre modèle, s'intéresser aux paramètres prédation et reproduction plus en détail et étudier également l'impact de leur variation sur la convergence de l'algorithme vers une situation d'extinction de deux espèces.
+
