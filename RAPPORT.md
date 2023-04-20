@@ -40,7 +40,7 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue, c'est à dire que l'on arrive à une situation ou des espèces disparaissent et une seule survit. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
-### Tests
+### Résultats
 
 Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs tests sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 avec des valeurs de σ et μ fixées à 0.3 et sur chacun des 100 cas, on itère jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tours nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne sur les 100 exécutions de l'algorithme. Nous obtenons les résultats suivant:
 
