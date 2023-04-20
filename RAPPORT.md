@@ -6,7 +6,7 @@ Par Lucas le Roc'h Morgère, Ilias Ouriagli
 
 ![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
 
-Dans le cadre de cette ARE DYNAMIC, nous fûmes ammenés à étudier les différents enjeux que pouvaient engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Cette dernière est régie par les interactions cycliques et non hiérarchiques entre les différentes populations concurrentes. Afin de mieux pouvoir observer les conséquences de ces intéractions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
+Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les différents enjeux que peuvent engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Cette dernière est régie par les interactions cycliques et non hiérarchiques entre les différentes populations concurrentes. Afin de mieux pouvoir observer les conséquences de ces interactions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
 
 ### Présentation de notre modèle
 
@@ -23,11 +23,13 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 La reproduction des individus n’est autorisée que sur les sites adjacents vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
-Les actions décries ci-dessus sont vérifiées pour la globalité des individus composant notre matrice à chaque tour de boucle pour un nombre total défini par l'utilisateur. 
+A chaque tour de boucle, chaque indidivu est traité et peut effectuer une ou plusieurs des actions décrites plus haut.
+
+<iframe src='//gifs.com/embed/rps-nR9K77' frameborder='0' scrolling='no' width='1920px' height='1080px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (corrèspondant au paramètre mobilité de notre modèle) sur que la biodiversité car il s'agit d'une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité fait concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc le biais de tests effectués sur ordinateur par notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc le biais de tests effectués sur ordinateur par notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
 
 ### Tests
 
