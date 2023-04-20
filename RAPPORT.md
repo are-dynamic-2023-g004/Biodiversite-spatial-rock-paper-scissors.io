@@ -6,7 +6,7 @@ Par Lucas le Roc'h Morgère, Ilias Ouriagli
 
 ![image](https://user-images.githubusercontent.com/125641635/233152681-69193145-5ad4-497c-8430-d6388c9ffbc9.png)
 
-Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les différents enjeux que peuvent engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Cette dernière est régie par les interactions cycliques et non hiérarchiques entre les différentes populations concurrentes. Afin de mieux pouvoir observer les conséquences de ces interactions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
+Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les différents enjeux que peuvent engendrer les interactions entre différentes populations dans un écosystème donné ainsi que leur impact sur la biodiversité du dit écosystème. Par exemple, les espèces en mangent d'autres et peuvent migrer d'un endroit à l'autre. Afin de mieux pouvoir observer les conséquences de ces interactions, nous avons décidé d'abstraire ces différentes dynamiques par le modèle du "Spatial rock paper scissors".
 
 ### Présentation de notre modèle
 
@@ -38,24 +38,23 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc le biais de tests effectués sur ordinateur par notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales qui sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
 
 ### Tests
 
-Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'éffectuer plusieurs test sur notre modèle en variant le paramètre ε. Une fois ce paramètre choisi, nous effectuons 100 itérations de notre algorythme sur une matrice de taille 40*40 jusqu'à ce qu'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours ai été effectués. Nous recenssons le nombre de tour nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
+Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs test sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tour nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
 
 *nombre de tours moyen nécessaires à l'extinction d'une espèce selon le paramètre ε*
 
 <img width="219" alt="Courbe nb tours en fct de permutation" src="https://user-images.githubusercontent.com/125641635/233406310-ef4bc624-6507-4dbe-93fa-bcc9bef3f38b.PNG">
 
-Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire à un scénario dans lequel une espèce domine est faible.
+Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et le nombre moyen de tours nécessaires à l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire pour arriver à un scénario dans lequel une espèce domine est faible.
 
 *proportion des itérations étant parvenues à l'extinction d'une espèce selon le paramètre ε*
 
 <img width="202" alt="courbe2 ARE" src="https://user-images.githubusercontent.com/125641635/233484278-fa590816-74d1-4fa5-8b39-e7f6d71ec0ba.PNG">
 
-Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dir, un seuil de mobilité au dessus duquel il y aura toujours dominance d'une espèce. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.18, notre modèle arrive toujours à un état où une seule espèce dommine.
-Cette courbe ci
+Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dire, un seuil de mobilité au dessus duquel il y aura toujours la dominance d'une espèce au bout d'un certain temps. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.18, notre modèle arrive toujours à un état où une seule espèce dommine.
 
 ### Conclusion
 
