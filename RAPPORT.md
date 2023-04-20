@@ -23,9 +23,9 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 La reproduction des individus n’est autorisée que sur les cases adjacentes vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
-A chaque tour de boucle, chaque indidivu est traité et peut effectuer une ou plusieurs des actions décrites plus haut.
+A chaque tour de boucle, chaque indidivu est considérer et peut effectuer une ou plusieurs des actions décrites plus haut, en fonction des probabilités définies.
 
-Cliquez sur les liens suivants pour voir trois vidéos de notre modèle en action. En fonction des paramètres le comportement de l'algorithme est différent.
+Cliquez sur les liens suivants pour voir trois vidéos de notre modèle en action. En fonction de nos trois paramètres σ,μ,ε (correspondant à la probabilité de prédation, de reproduction et de mobilité respectivement), le comportement de l'algorithme est différent.
 
 https://imgur.com/a/5CajVVb
 
@@ -38,11 +38,11 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, la biodiversité sera perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
 ### Tests
 
-Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs test sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tours nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
+Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'effectuer plusieurs tests sur notre modèle en variant le paramètre ε. Pour chaque valeur de ε, nous lançons notre algorithme 100 fois sur une matrice de taille 40*40 avec des valeurs de σ et μ fixées à 0.3 et sur chacun des 100 cas, on itère jusqu'à ce que l'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours aient été effectués. Nous recensons le nombre de tours nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne sur les 100 exécutions de l'algorithme. Nous obtenons les résultats suivant:
 
 *nombre de tours moyen nécessaires à l'extinction d'une espèce selon le paramètre ε*
 
@@ -54,7 +54,7 @@ Nous pouvons constater sur cette courbe une relation décroissante entre le para
 
 <img width="202" alt="courbe2 ARE" src="https://user-images.githubusercontent.com/125641635/233484278-fa590816-74d1-4fa5-8b39-e7f6d71ec0ba.PNG">
 
-Cette courbe ci nous permet d'établir un seuil de mobilité critique, c'est a dire, un seuil de mobilité au dessus duquel il y aura toujours l'extinction de deux espèces au bout d'un certain temps. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.2, notre modèle arrive toujours à un état où une seule espèce survit.
+Cette courbe-ci nous permet d'établir un seuil de mobilité critique, c'est a dire, un seuil de mobilité au dessus duquel il y aura toujours l'extinction de deux espèces au bout d'un certain temps. En effet, nous pouvons constater qu'au delà d'un ε d'environ 0.2, notre modèle arrive toujours à un état où une seule espèce survit.
 
 ### Conclusions
 
