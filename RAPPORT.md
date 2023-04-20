@@ -32,3 +32,11 @@ Les actions décries ci-dessus sont vérifiées pour la globalité des individus
 ### Problématique
 
 Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (corrèspondant au paramètre mobilité de notre modèle) sur que la biodiversité car il s'agit d'une caractéristique omniprésente des écosystèmes réels. En effet, la mobilité fait concurrence aux interactions locales comme la reproduction et la sélection qui favorisent la préservation des espèces et la biodiversité. Nous avons donc émis comme hypothèse que pour des valeurs de mobilité faibles, le développement temporel sera dominé par les interactions entre les individus voisins, ce qui entraînera le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces sera élevée, l’homogénéité spatiale et la biodiversité seront perdues. Nous tacherons donc le biais de tests effectués sur ordinateur par notre modèle, de valider cette hypothèse au long de notre travail. De manière plus précise, nous aimerions pouvoir relever des changements concernant l'extinction ou la dominance d'une espèce en fonction de notre paramètre ε. 
+
+### Tests
+
+Afin de pouvoir répondre à la question énoncée précedemenent, nous avons décidé de créer une fonction ayant pour but d'éffectuer plusieurs test sur notre modèle en variant le paramètre ε. Une fois ce paramètre choisi, nous effectuons 100 itérations de notre algorythme sur une matrice de taille 40*40 jusqu'à ce qu'on parvienne à une situation d'extinction ou jusqu'à ce que 5000 tours ai été effectués. Nous recenssons le nombre de tour nécessaires à la satisfaction de nos conditions d'arrêt puis nous en faisons la moyenne. Nous obtenons les résultats suivant:
+
+<img width="219" alt="Courbe nb tours en fct de permutation" src="https://user-images.githubusercontent.com/125641635/233406310-ef4bc624-6507-4dbe-93fa-bcc9bef3f38b.PNG">
+
+Nous pouvons constater sur cette courbe une relation décroissante entre le paramètre de mobilité et l'extinction d'une espèce. En effet, plus la probabilité de mobilité est élevée, moins le nombre moyens de tours nécessaire à un scénario dans lequel une espèce domine est faible.
