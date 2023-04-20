@@ -27,9 +27,9 @@ A chaque tour de boucle, chaque indidivu est traité et peut effectuer une ou pl
 
 Cliquez sur les liens suivants pour voir trois vidéos de notre modèle en action. En fonction des paramètres le comportement de l'algorithme est différent.
 https://imgur.com/a/5CajVVb
-![image](https://user-images.githubusercontent.com/125642499/233498578-6d6a0ae6-253b-4699-a193-5482ef753ec7.png)
 https://imgur.com/a/LIDKk96
-![image](https://user-images.githubusercontent.com/125642499/233498632-61132dc4-3943-4dde-9198-e2f6cb89c042.png)
+https://imgur.com/a/o27XBHy
+Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres. 
 
 
 ### Problématique
