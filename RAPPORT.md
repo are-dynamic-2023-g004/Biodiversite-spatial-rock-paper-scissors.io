@@ -23,9 +23,9 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 La reproduction des individus n’est autorisée que sur les cases adjacentes vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
-A chaque tour de boucle, chaque indidivu est considérer et peut effectuer une ou plusieurs des actions décrites plus haut, en fonction des probabilités définies.
+A chaque tour de boucle, chaque indidivu est considéré et peut effectuer une ou plusieurs des actions décrites plus haut, en fonction des probabilités définies.
 
-Cliquez sur les liens suivants pour voir trois vidéos de notre modèle en action. En fonction de nos trois paramètres σ,μ,ε (correspondant à la probabilité de prédation, de reproduction et de mobilité respectivement), le comportement de l'algorithme est différent.
+En cliquant sur les liens suivants, on peut voir trois vidéos de notre modèle en action. On peut également exécuter notre code posté sur le github pour tester notre modèle et faire varier les paramètres. Les espèces sont représentées par des couleurs différentes. En fonction de nos trois paramètres σ, μ et ε (correspondant à la probabilité de prédation, de reproduction et de mobilité respectivement), le comportement de l'algorithme est différent.
 
 https://imgur.com/a/5CajVVb
 
@@ -38,7 +38,7 @@ Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres.
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue, c'est à dire que l'on arrive à une situation ou des espèces disparaissent et une seule survit. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
 ### Tests
 
