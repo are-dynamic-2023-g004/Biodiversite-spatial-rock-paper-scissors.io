@@ -7,7 +7,7 @@
     
   Description du projet:
   
-   Notre objectif est de modéliser les interactions entre les populations d'un milieu donné en se basant sur le principe du pierre-feuille-ciseaux spatial et les impacts que les différents paramètres du modèle peuvent avoir sur la biodiversité du milieu.
+   Notre objectif est de modéliser les interactions entre les populations d'un milieu donné en se basant sur le principe du pierre-feuille-ciseaux spatial et les impacts que les différents paramètres du modèle peuvent avoir sur la biodiversité du milieu. On s'intéressera particulièrement à l'influence de la mobilité sur l'extinction d'une espèce.
     
  SEMAINE DU 10 MARS 2023
  
@@ -23,8 +23,7 @@ SEMAINE DU 24 MARS 2023
 
 SEMAINE DU 31 MARS 2023
 
-  Durant cette séance, nous avons décidé d'approfondir nos connaissances relatives au sujet en lisant d'avantage d'article universitaire afin de mieux cerner les impacts qu'ont nos paramètre et de pouvoir les décrire de manière plus précise. Nous avons trouvé particulièrement utile les articles " Multi-Layered Model for Rock-Paper-Scissors Game: A Swarm Intelligence Sustains Biodiversity " et " Mobility Promotes and Jeopardizes Biodiversity in Rock–Paper–
-Scissors Games ". Nous avons aussi mis quelques idées en commun afin de pouvoir améliorer notre programme. Nous avons aussi entamé notre carnet de bord.
+  Durant cette séance, nous avons décidé d'approfondir nos connaissances relatives au sujet en lisant d'avantage d'article universitaire afin de mieux cerner les impacts qu'ont nos paramètre et de pouvoir les décrire de manière plus précise. Nous avons aussi mis quelques idées en commun afin de pouvoir améliorer notre programme. Nous avons aussi entamé notre carnet de bord.
 
 SEMAINE DU 7 AVRIL 2023
 
@@ -32,4 +31,4 @@ SEMAINE DU 7 AVRIL 2023
   
 SEMAINE DU 14 AVRIL
  
-  Nous avons dédié ces dernières heures à la finalisation de notre projet ainsi qu'à la création de notre PowerPoint et de notre rapport
+  Nous avons dédié ces dernières heures à la finalisation de notre projet ainsi qu'à la création de notre PowerPoint et de notre rapport.
