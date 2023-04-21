@@ -15,7 +15,7 @@ epsilon=0.2   #probabilité de mobilité/permutation
 tm=80 #taille de la matrice
 
 def gagne(a,b):
-    if ((a-b==1) or (a-b==-nb_types+1))and(a!=-1 and b!=-1):
+    if ((a-b==1) or (a-b==-nb_types+1)) and (a!=-1 and b!=-1):
         return True
     else:
         return False
@@ -148,8 +148,7 @@ for k in range(4000):
                 dessin.create_rectangle(i*echx,j*echy,i*echx+echx,j*echy+echy,fill='orange')
             elif matr[i][j]==5:
                 dessin.create_rectangle(i*echx,j*echy,i*echx+echx,j*echy+echy,fill='purple')
-            
-            
+               
     fenetre.update()
     time.sleep(0.001)
     dessin.delete("all")
