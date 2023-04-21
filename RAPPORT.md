@@ -25,7 +25,7 @@ La prédation représente la dominance d'une espèce sur l'autre et représente 
 
 La reproduction d'un individu consiste à transormer une case adjacente vide en une case de la couleur de l'individu. 
 
-La mobilité consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
+La mobilité, aussi appelée permutation, consiste à l'échange de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
 A chaque tour de boucle, chaque indidivu est considéré et peut effectuer une ou plusieurs des actions décrites plus haut, en fonction des probabilités définies.
 
