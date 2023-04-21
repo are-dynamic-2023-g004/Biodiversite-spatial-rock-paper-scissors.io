@@ -12,7 +12,7 @@ Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les di
 
 ![image](https://user-images.githubusercontent.com/125641635/233149337-59fe4ca0-3582-4dbc-b384-f12aff287494.png)
 
-Le principe est simple, nous avons ici trois espèces en compétition, A, B et C. Ces dernières assument le rôle de pierre, feuille et ciseaux, tout comme dans le jeu éponyme dans lequel la pierre écrase les ciseaux, les ciseaux coupent le papier et le papier enveloppe la pierre. C'est donc ce principe qui nous sert de socle sur lequel batir notre modèle.
+Le principe est simple, nous avons ici trois espèces en compétition, A, B et C. Ces dernières assument le rôle de pierre, feuille et ciseaux, tout comme dans le jeu éponyme dans lequel la pierre l'emporte sur les ciseaux, les ciseaux l'emportent le papier et le papier l'emporte sur la pierre. C'est donc ce principe qui nous sert de socle sur lequel batir notre modèle.
 Ce dernier est gouverné par trois paramètres, la prédation, la reproduction et la mobilité. Son fonctionnement est le suivant: des individus des trois espèces concurrentes A, B et C occupent les cases d’une matrice. Ils interagissent avec les cases qui leur sont adjacentes par la prédation ou la reproduction, les deux réactions se produisent de manière aléatoire à des probabilités σ et μ, respectivement. La prédation représente la dominance d'une espèce sur l'autre et représente l'application du pierre feuille ciseau, de fait: 
 
 -A peut tuer B, donnant un site vide. 
