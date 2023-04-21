@@ -13,7 +13,9 @@ Dans le cadre de cette ARE DYNAMIC, nous avons été ammenés à étudier les di
 ![image](https://user-images.githubusercontent.com/125641635/233149337-59fe4ca0-3582-4dbc-b384-f12aff287494.png)
 
 Le principe est simple, nous avons ici trois espèces en compétition, A, B et C. Ces dernières assument le rôle de pierre, feuille et ciseaux, tout comme dans le jeu éponyme dans lequel la pierre l'emporte sur les ciseaux, les ciseaux l'emportent le papier et le papier l'emporte sur la pierre. C'est donc ce principe qui nous sert de socle sur lequel batir notre modèle.
-Ce dernier est gouverné par trois paramètres, la prédation, la reproduction et la mobilité. Son fonctionnement est le suivant: des individus des trois espèces concurrentes A, B et C occupent les cases d’une matrice. Ils interagissent avec les cases qui leur sont adjacentes par la prédation ou la reproduction, les deux réactions se produisent de manière aléatoire à des probabilités σ et μ, respectivement. La prédation représente la dominance d'une espèce sur l'autre et représente l'application du pierre feuille ciseau, de fait: 
+Ce dernier est gouverné par trois paramètres, la prédation, la reproduction et la mobilité. Son fonctionnement est le suivant: des individus des trois espèces concurrentes A, B et C occupent les cases d’une matrice. Ils interagissent avec les cases qui leur sont adjacentes par la prédation, la reproduction ou la mobilité, les trois réactions se produisent de manière aléatoire à des probabilités σ, μ et ε, respectivement. 
+
+La prédation représente la dominance d'une espèce sur l'autre et représente l'application du pierre feuille ciseau, de fait: 
 
 -A peut tuer B, donnant un site vide. 
 
@@ -21,11 +23,13 @@ Ce dernier est gouverné par trois paramètres, la prédation, la reproduction e
 
 -C à son tour peut tuer A
 
-La reproduction des individus n’est autorisée que sur les cases adjacentes vides. La mobilité, régie par une probabilité ε, consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
+La reproduction d'un individu consiste à transormer une case adjacente vide en une case de la couleur de l'individu. 
+
+La mobilité consiste au changement de position avec un individu adjacent, ce dernier pouvant être une case vide.
 
 A chaque tour de boucle, chaque indidivu est considéré et peut effectuer une ou plusieurs des actions décrites plus haut, en fonction des probabilités définies.
 
-En cliquant sur les liens suivants, on peut voir trois vidéos de notre modèle en action. On peut également exécuter notre code posté sur le github pour tester notre modèle et faire varier les paramètres. Les espèces sont représentées par des couleurs différentes. En fonction de nos trois paramètres σ, μ et ε (correspondant à la probabilité de prédation, de reproduction et de mobilité respectivement), le comportement de l'algorithme est différent.
+En cliquant sur les liens suivants, on peut voir trois vidéos de notre modèle en action. Les espèces sont représentées par des couleurs différentes. En fonction de nos trois paramètres σ, μ et ε (correspondant à la probabilité de prédation, de reproduction et de mobilité respectivement), le comportement de l'algorithme est différent.
 
 https://imgur.com/a/5CajVVb
 
@@ -35,10 +39,12 @@ https://imgur.com/a/o27XBHy
 
 Dans la troisième vidéo, on constate qu'une couleur l'emporte sur les autres. 
 
+On peut également exécuter notre code posté sur le github pour tester notre modèle et faire varier les paramètres. 
+
 
 ### Problématique
 
-Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue, c'est à dire que l'on arrive à une situation ou des espèces disparaissent et une seule survit. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
+Nous avons ici pour but d'étudier l'impact qu'a la migration spatiale des individus (correspondant au paramètre mobilité de notre modèle) sur la biodiversité. En effet, la mobilité fait concurrence aux interactions locales que sont la reproduction et la prédation. Nous avons émis comme hypothèse que pour des valeurs de mobilité faibles, les interactions habituelles entre les individus voisins sont maintenues, ce qui entraine le maintien à long terme de la diversité des espèces. En revanche, lorsque la mobilité des espèces est élevée, la biodiversité est perdue, c'est à dire que l'on arrive à une situation où des espèces disparaissent et une seule survit. Nous tacherons donc par le biais de tests effectués sur notre modèle, de valider cette hypothèse au long de notre travail.
 
 ### Résultats
 
@@ -58,7 +64,7 @@ Cette courbe-ci nous permet d'établir un seuil de mobilité critique, c'est a d
 
 ### Conclusions
 
-De fait des résultats des tests que nous avons effectué plus haut, on voit bien qu'une trop grande mobilité dans un milieu entraine de grands risques de perte de biodiversité, en venant perturber les intercations cycliques localement en place entre les espèces de l'écosystème. On peut penser aux espèces invasives qui mettent en danger les écosystèmes, comme les frelons asiatiques qui provoquent une baisse de la population d'abeilles et de frelons européens en France. 
+Du fait des résultats des tests que nous avons effectué plus haut, on voit bien qu'une trop grande mobilité dans un milieu entraine de grands risques de perte de biodiversité, en venant perturber les intercations cycliques localement en place entre les espèces de l'écosystème. On peut penser aux espèces invasives qui mettent en danger les écosystèmes, comme les frelons asiatiques qui provoquent une baisse de la population d'abeilles et de frelons européens en France. 
 
 ### Analyse critique et ouverture
 
